@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: black; */
+      }
+      .container {
+        background: rgba(0, 0, 0, 0.7)
+          url(https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/8e07a611-4ced-4d4e-81e6-d278862c952b/IN-en-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+        background-size: cover;
+        height: 750px;
+        width: 1500px;
+        background-blend-mode: darken;
+        color: white;
+        border-bottom: 10px solid grey;
+      }
+      .container img {
+        margin-left: 50px;
+        margin-top: 30px;
+      }
+      .container #signin {
+        float: right;
+        margin-right: 50px;
+        margin-top: 30px;
+        background-color: red;
+        color: white;
+        padding: 8px;
+        font-size: 15px;
+        width: 80px;
+        border: none;
+        border-radius: 6%;
+      }
+      .container .content1 {
+        text-align: center;
+        /* border: 3px solid red; */
+        /* font-size: xx-large; */
+        height: 600px;
+        font-family: sans-serif;
+        line-height: 60px;
+        margin-top: 170px;
+      }
+      .container .content1 h1 {
+        font-size: 67px;
+      }
+
+      .container .content1 #p1 {
+        font-size: 25px;
+      }
+      .container .content1 #p2 {
+        font-size: 20px;
+      }
+      .container .content1 input {
+        width: 500px;
+        height: 70px;
+      }
+      .container .content1 .btn2 {
+        background-color: red;
+        color: white;
+        /* padding: 8px; */
+        font-size: 20px;
+        height: 74px;
+        width: 220px;
+        /* padding: 10px; */
+        font-size: x-large;
+        margin-left: -5px;
+      }
+      .page2nd {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        border-bottom: 10px solid grey;
+      }
+      /* .page2nd h1 p {
+        flex-direction: column;
+        font-size: x-large;
+      } */
+      .page2nd .para {
+        font-size: 25px;
+        color: white;
+        font-family: sans-serif;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 200px;
+        margin-right: 100px;
+      }
+      .page3rd {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        border-bottom: 10px solid grey;
+        /* margin-bottom: 100px; */
+      }
+      .page3rd .para {
+        font-size: 25px;
+        color: white;
+        font-family: sans-serif;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 200px;
+        margin-right: 100px;
+      }
+      .page3rd img {
+        margin-top: 100px;
+        margin-right: 200px;
+      }
+      .page4 {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        border-bottom: 10px solid grey;
+      }
+      .page4 .para {
+        font-size: 25px;
+        color: white;
+        font-family: sans-serif;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 200px;
+        margin-right: 100px;
+      }
+      .page4 .para h1 {
+        line-height: 100px;
+      }
+      .page4 img {
+        width: 500px;
+        margin-top: 100px;
+      }
+      .page5 {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        border-bottom: 10px solid grey;
+        /* margin-bottom: 100px; */
+      }
+      .page5 .para {
+        font-size: 25px;
+        color: white;
+        font-family: sans-serif;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 280px;
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+      .page5 img {
+        width: 500px;
+        margin-top: 200px;
+      }
+      .page6 {
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+        border-bottom: 10px solid grey;
+      }
+      .page6 h1 {
+        font-size: 51px;
+        /* margin-top: 100px; */
+        margin-bottom: 50px;
+      }
+      .page6 .pitem {
+        width: 750px;
+        background-color: rgb(56, 56, 56);
+        padding: 20px;
+        font-size: 25px;
+        margin-left: 370px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .page6 .btn2 {
+        background-color: red;
+        color: white;
+        /* padding: 8px; */
+        font-size: 20px;
+        height: 74px;
+        width: 220px;
+        /* padding: 10px; */
+        font-size: x-large;
+        margin-left: -5px;
+      }
+      .page6 #p2 {
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .page6 input {
+        width: 500px;
+        height: 70px;
+        margin-bottom: 100px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX AND CHILL</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://raw.githubusercontent.com/techiecoder2079/Netflix-Clone/main/logo.png"
+        height="50px "
+        width="200px"
+        alt=""
+      />
+
+      <button id="signin">Sign In</button>
+      <div class="content1">
+        <h1>Unlimited movies, TV</h1>
+        <h1>shows and more.</h1>
+        <p id="p1">Watch anywhere. Cancel anytime.</p>
+        <p id="p2">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <input type="email" placeholder="Email Address" />
+        <button class="btn2">Get Startted ></button>
+      </div>
+    </div>
+    <div class="page2nd">
+      <div class="para">
+        <h1>Enjoy on your TV.</h1>
+        <p>Watch on smart TVs, PlayStation, Xbox,</p>
+        <p>Chromecast, Apple TV, Blu-ray players and</p>
+        <p>more.</p>
+      </div>
+      <img
+        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+        alt=""
+      />
+    </div>
+    <div class="page3rd">
+      <img
+        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+        height="300px"
+        width="500px"
+        alt=""
+      />
+      <div class="para">
+        <h1>Download your shows</h1>
+        <h1>to watch offline.</h1>
+        <p>Save your favourites easily and always have</p>
+
+        <p>something to watch.</p>
+      </div>
+    </div>
+    <div class="page4">
+      <div class="para">
+        <h1>Watch everywhere.</h1>
+
+        <p>Stream unlimited movies and TV shows on</p>
+        <p>your phone, tablet, laptop, and TV.</p>
+      </div>
+      <img
+        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+        alt=""
+      />
+    </div>
+    <div class="page5">
+      <img
+        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/kidsValueProp.png"
+        alt=""
+      />
+      <div class="para">
+        <h1>Create profiles for</h1>
+        <h1>children.</h1>
+        <p>Send children on adventures with their</p>
+        <p>favourite characters in a space made just for</p>
+        <p>them—free with your membership.</p>
+      </div>
+    </div>
+    <div class="page6">
+      <h1>Frequently Asked Questions</h1>
+
+      <p class="pitem">What is Netflix?</p>
+      <p class="pitem">How much does Netflix cost?</p>
+      <p class="pitem">Where can I watch?</p>
+      <p class="pitem">How do I cancel?</p>
+      <p class="pitem">How do I cancel?</p>
+      <p class="pitem">How do I cancel?</p>
+      <p id="p2">
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+      <input type="email" placeholder="Email Address" />
+      <button class="btn2">Get Startted ></button>
+    </div>
+  </body>
+</html>
